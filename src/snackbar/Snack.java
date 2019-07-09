@@ -1,11 +1,10 @@
 package snackApp; 
 	class Snack {
-	private static idCounter =0;;
+	private static int idCounter =0;;
 	private int id;
 	private String name;
 	private int quantity;
 	private float cost;
-	private int id;
 
 	public Snack(String name, int quantity, float cost){
 		this.id = idCounter++;
@@ -49,7 +48,7 @@ package snackApp;
 		}
 		return success;
 	}
-	public totalCost(int amount) {
+	public float totalCost(int amount) {
 		return cost * amount;
 	}
 }

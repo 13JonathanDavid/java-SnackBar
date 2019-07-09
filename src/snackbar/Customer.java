@@ -1,7 +1,7 @@
 package snackbar;
 
 class Customer {
-	private static idCounter = 0;
+	private static int idCounter = 0;
 	private int id;
 	private String name;
 	private float money;
@@ -39,7 +39,7 @@ class Customer {
 		}
 		return success;
 	}
-	public boolean payExpense(expenseAmount){
+	public boolean payExpense(float expenseAmount){
 		boolean success = false;
 		if(expenseAmount <= money){
 			money -= expenseAmount;
